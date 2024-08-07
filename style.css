@@ -117,3 +117,24 @@ header {
   height: auto;
 }
 
+@media (max-width: 768px) {
+  .l-logo {
+    height: 50px; /* Adjust logo size */
+  }
+
+  #a, #b {
+    font-size: 14px; /* Smaller text for inputs and buttons */
+  }
+
+  #d {
+    font-size: 14px; /* Smaller text for Load More button */
+  }
+
+  .searchbox {
+    flex-direction: column; /* Stack searchbox elements */
+  }
+
+  #a {
+    margin-bottom: 10px; /* Space between input and button */
+  }
+}
