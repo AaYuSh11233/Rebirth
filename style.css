@@ -116,25 +116,3 @@ header {
   padding: 10px;
   height: auto;
 }
-
-@media (max-width: 768px) {
-  .l-logo {
-    height: 50px;
-  }
-
-  #a, #b {
-    font-size: 14px;
-  }
-
-  #d {
-    font-size: 14px;
-  }
-
-  .searchbox {
-    flex-direction: column;
-  }
-
-  #a {
-    margin-bottom: 10px;
-  }
-}
