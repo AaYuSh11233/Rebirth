@@ -41,8 +41,8 @@
   
   .menu-container {
     position: absolute;
-    top: 10px;
-    left:  0;
+    bottom: 70px;
+    right:  1300px;
     display: flex;
     align-items: center;
     z-index: 10;
