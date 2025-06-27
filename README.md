@@ -2,7 +2,6 @@
 
 A modern, high-performance video and image search engine with premium UI/UX design. Built with vanilla JavaScript, featuring a sleek dark theme, responsive design, and advanced search capabilities.
 
-
 ## ✨ Features
 
 ### 🎯 Core Functionality
@@ -35,7 +34,7 @@ A modern, high-performance video and image search engine with premium UI/UX desi
 
 1. **Clone the repository**
    \`\`\`bash
-   git clone (https://github.com/AaYuSh11233/Rebirth.git)
+   git clone https://github.com/AaYuSh11233/Rebirth.git
    cd nexus-search
    \`\`\`
 
@@ -71,18 +70,62 @@ A modern, high-performance video and image search engine with premium UI/UX desi
 
 ## 🔧 API Setup
 
-### Pixabay API (Images)
-1. Visit [Pixabay API Documentation](https://pixabay.com/api/docs/)
-2. Create a free account
-3. Get your API key from the dashboard
-4. Replace \`YOUR_PIXABAY_API_KEY\` in the code
+### 🖼️ Image APIs
 
-### YouTube Data API (Videos)
+#### Unsplash API (Primary - High Quality)
+1. Visit [Unsplash Developers](https://unsplash.com/developers)
+2. Create a free account and register your application
+3. Get your Access Key (1000 requests/hour free)
+4. Replace `YOUR_UNSPLASH_ACCESS_KEY` in the code
+
+#### Pexels API (Backup - Good Quality)
+1. Visit [Pexels API](https://www.pexels.com/api/)
+2. Create a free account
+3. Get your API key (200 requests/hour free)
+4. Replace `YOUR_PEXELS_API_KEY` in the code
+
+#### Pixabay API (Fallback - Unlimited Free)
+1. Visit [Pixabay API](https://pixabay.com/api/docs/)
+2. Create a free account
+3. Get your API key (unlimited requests)
+4. Replace `YOUR_PIXABAY_API_KEY` in the code
+
+### 🎥 Video APIs
+
+#### YouTube Data API (Primary - Best Video Source)
 1. Go to [Google Cloud Console](https://console.cloud.google.com/)
 2. Create a new project or select existing one
 3. Enable YouTube Data API v3
 4. Create credentials (API key)
-5. Replace \`YOUR_YOUTUBE_API_KEY\` in the code
+5. Get 10,000 requests/day free
+6. Replace `YOUR_YOUTUBE_API_KEY` in the code
+
+#### Pexels Videos API (Backup)
+- Uses the same API key as Pexels Images
+- Provides high-quality stock videos
+
+#### Pixabay Videos API (Fallback)
+- Uses the same API key as Pixabay Images
+- Unlimited free video searches
+
+## 🚀 API Features
+
+### Smart Fallback System
+- **Images**: Unsplash → Pexels → Pixabay
+- **Videos**: YouTube → Pexels Videos → Pixabay Videos
+- Automatic failover if one API is down or rate-limited
+
+### Free Tier Limits
+- **Unsplash**: 50 requests/hour (demo), 5000/hour (production)
+- **Pexels**: 200 requests/hour
+- **Pixabay**: Unlimited requests
+- **YouTube**: 10,000 requests/day
+
+### Quality Comparison
+- **Unsplash**: Highest quality professional photos
+- **Pexels**: High quality stock photos and videos
+- **Pixabay**: Good quality with largest free collection
+- **YouTube**: Best video content variety
 
 ## 🎮 Usage
 
