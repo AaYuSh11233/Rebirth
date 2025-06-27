@@ -35,7 +35,7 @@ A modern, high-performance video and image search engine with premium UI/UX desi
 1. **Clone the repository**
    \`\`\`bash
    git clone https://github.com/AaYuSh11233/Rebirth.git
-   cd nexus-search
+   cd Rebirth
    \`\`\`
 
 2. **Configure API Keys**
